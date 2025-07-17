@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Intermediate Web Project</title>
+  <link rel="stylesheet" href="Task2.css" />
+</head>
+<body>
+
+  <!-- Contact Form -->
+  <section class="contact-section">
+    <h1>Contact Us</h1>
+    <form id="contactForm" novalidate>
+      <input type="text" name="name" id="name" placeholder="Full Name" required />
+      <input type="email" name="email" id="email" placeholder="Email Address" required />
+      <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+      <p class="form-feedback" id="formFeedback"></p>
+    </form>
+  </section>
+
+  <!-- Responsive Layout -->
+  <section class="layout-section">
+    <div class="container">
+      <nav>Navbar</nav>
+      <main>Main Content Area</main>
+      <aside>Sidebar Info</aside>
+    </div>
+  </section>
+
+  <!-- To-Do List -->
+  <section class="todo-section">
+    <h2>My To-Do List</h2>
+    <div class="todo-input">
+      <input type="text" id="taskInput" placeholder="New task..." />
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+    <ul id="taskList"></ul>
+  </section>
+
+  <script src="Task2.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  background: linear-gradient(135deg, black, #aa1911);
+
+}
+
+h1, h2 {
+  color: black;
+}
+
+/* Contact Form */
+.contact-section {
+  background: #edf6f9;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  background: linear-gradient(135deg, #aa1911, black);
+
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background-color: #06d6a0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #05c28b;
+}
+
+.form-feedback {
+  margin-top: 10px;
+  color: red;
+}
+
+/* Responsive Layout using Flexbox and Grid */
+.layout-section .container {
+  display: grid;
+  grid-template-areas: 
+    "nav nav"
+    "main aside";
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+nav {
+  grid-area: nav;
+  background: #006d77;
+  color: white;
+  padding: 15px;
+  background: linear-gradient(135deg, violet, black);
+
+}
+
+main {
+  grid-area: main;
+  background: #83c5be;
+  padding: 15px;
+  background: linear-gradient(135deg, violet, black);
+
+}
+
+aside {
+  grid-area: aside;
+  background: #edf6f9;
+  padding: 15px;
+  background: linear-gradient(135deg, violet, black);
+
+}
+
+@media (max-width: 768px) {
+  .layout-section .container {
+    grid-template-areas:
+      "nav"
+      "main"
+      "aside";
+    grid-template-columns: 1fr;
+  }
+}
+
+/* To-Do List */
+.todo-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+    background: linear-gradient(135deg, #aa1911, black);
+
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+.todo-input button {
+  padding: 10px 15px;
+  background-color: #118ab2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+#taskList li {
+  padding: 10px;
+  background-color: #e0fbfc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#taskList li button {
+  background: #ef476f;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
